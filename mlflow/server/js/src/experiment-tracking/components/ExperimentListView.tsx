@@ -260,13 +260,13 @@ export class ExperimentListView extends Component<Props, State> {
         />
         <div css={classNames.experimentTitleContainer}>
           <Typography.Title level={2} style={{ margin: 0 }}>
-            Experiments
+            Projects
           </Typography.Title>
           <div>
             <PlusCircleIcon
               onClick={this.handleCreateExperiment}
               css={classNames.icon(theme)}
-              title="New Experiment"
+              title="New Project"
               data-testid="create-experiment-button"
             />
             <CaretDownSquareIcon
@@ -279,7 +279,7 @@ export class ExperimentListView extends Component<Props, State> {
         </div>
         <Input
           componentId="codegen_mlflow_app_src_experiment-tracking_components_experimentlistview.tsx_280"
-          placeholder="Search Experiments"
+          placeholder="Search Projects"
           aria-label="search experiments"
           value={searchInput}
           onChange={this.handleSearchInputChange}

@@ -58,10 +58,12 @@ export const ExperimentViewHeader = React.memo(
           size="small"
           endIcon={<NewWindowIcon />}
         >
+          {/* 
           <FormattedMessage
             defaultMessage="Provide Feedback"
             description="Link to a survey for users to give feedback"
-          />
+          /> 
+          */}
         </Button>
       );
       return feedbackLink;

@@ -46,7 +46,7 @@ export const MlflowHeader = ({
         }}
       >
         <Link to={ExperimentTrackingRoutes.rootRoute}>
-          <img
+          {/* <img
             css={{
               height: 40,
               marginLeft: 24,
@@ -55,9 +55,9 @@ export const MlflowHeader = ({
             }}
             alt="MLflow"
             src={logo}
-          />
+          /> */}
         </Link>
-        <span
+        {/* <span
           css={{
             fontSize: 12,
             marginLeft: 5,
@@ -65,7 +65,7 @@ export const MlflowHeader = ({
           }}
         >
           {Version}
-        </span>
+        </span> */}
       </div>
       <div
         css={{
@@ -79,20 +79,23 @@ export const MlflowHeader = ({
           to={ExperimentTrackingRoutes.rootRoute}
           style={isExperimentsActive(location) ? classNames.activeNavLink : undefined}
         >
-          Experiments
+          Project
         </Link>
         <Link
           to={ModelRegistryRoutes.modelListPageRoute}
           style={isModelsActive(location) ? classNames.activeNavLink : undefined}
         >
-          Models
+          Model
         </Link>
+        <Link>Data</Link>
+        <Link>Ensemble</Link>
+        <Link>Visualization</Link>
       </div>
       <div css={{ flex: 1 }} />
       <div css={{ display: 'flex', gap: 24, paddingTop: 20, fontSize: 16, marginRight: 24 }}>
         <DarkThemeSwitch isDarkTheme={isDarkTheme} setIsDarkTheme={setIsDarkTheme} />
-        <a href="https://github.com/mlflow/mlflow">GitHub</a>
-        <a href={HomePageDocsUrl}>Docs</a>
+        {/* <a href="https://github.com/mlflow/mlflow">GitHub</a>
+        <a href={HomePageDocsUrl}>Docs</a> */}
       </div>
     </header>
   );
